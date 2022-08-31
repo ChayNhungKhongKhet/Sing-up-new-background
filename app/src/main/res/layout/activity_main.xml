@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/topView"
+        android:background="@drawable/wave" />
+
+    <LinearLayout
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/wave"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:text="Email"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+        </Space>
+        <Button
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Password"
+            android:textColor="@color/black" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+        </Space>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Sign Up"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
